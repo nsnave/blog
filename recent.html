@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <title>Blog</title>
     <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link rel="stylesheet" type="text/css" href="css/home-columns.css" />
+    <link rel="stylesheet" type="text/css" href="css/post-columns.css" />
   </head>
   <body>
     <div class="header">
@@ -28,7 +28,11 @@
 
       <div class="bar">
         <span class="title-span">
-          <a href="recent.html" class="sp-link" style="text-align: center">
+          <a
+            href="recent.html"
+            class="sp-link"
+            style="text-align: center; background-color: #aaa"
+          >
             <b>Recent Posts</b>
           </a>
         </span>
@@ -46,7 +50,9 @@
     </div>
 
     <div class="row">
-      <div class="leftcolumn">
+      <div class="sidecolumn">&nbsp;</div>
+
+      <div class="centercolumn">
         <!-- \expanded{recent} -->
         <div class="card">
           <h2>Post Title</h2>
@@ -95,39 +101,7 @@
         </div>
       </div>
 
-      <div class="rightcolumn">
-        <div class="card">
-          <h2>About Me</h2>
-          <div class="post-image" style="background-color: white">
-            <img src="media/me1.jpg" style="max-height: 200px" alt="Me" />
-          </div>
-          <p>Me</p>
-        </div>
-
-        <div class="card">
-          <h2>Selected Posts</h2>
-          <!-- \compact{top selected} -->
-          <div class="sp-div">
-            <a href="foo" class="sp-link">
-              Post Title <span style="color: dimgray">(<i>Date</i>)</span>
-            </a>
-          </div>
-          <br />
-          <div class="sp-div">
-            <a href="selected.html" class="sp-link" style="text-align: center">
-              <b>See More</b>
-            </a>
-          </div>
-          <br />
-        </div>
-
-        <!--
-        <div class="card">
-          <h3>Follow Me</h3>
-          <p>Some text..</p>
-        </div>
-        -->
-      </div>
+      <div class="sidecolumn">&nbsp;</div>
     </div>
 
     <div class="footer">

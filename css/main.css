@@ -18,7 +18,9 @@ body {
 }
 
 .header .bar {
+  justify-content: center;
   background-color: #ddd;
+  display: flex;
 }
 
 .title {
@@ -32,21 +34,6 @@ body {
   width: 33%;
 }
 
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {
-  float: left;
-  width: 70%;
-}
-
-/* Right column */
-.rightcolumn {
-  box-sizing: border-box;
-  float: left;
-  width: 30%;
-  padding-left: 20px;
-}
-
 /* Fake image */
 .fakeimg {
   box-sizing: border-box;
@@ -58,11 +45,12 @@ body {
 /* Post Images */
 .post-image {
   box-sizing: border-box;
-  background-color: #aaa;
+  background-color: #eee;
   width: 100%;
   text-align: center;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 
 .post-image img {
@@ -84,6 +72,8 @@ body {
   background-color: #ddd;
   width: 100%;
   padding: 5px;
+  text-decoration: none;
+  color: black;
 }
 
 .sp-link:hover {
@@ -98,26 +88,14 @@ body {
   margin-top: 20px;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 /* Footer */
 .footer {
   padding: 20px;
-  text-align: center;
+  text-align: left;
   background: #ddd;
   margin-top: 20px;
 }
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn,
-  .rightcolumn {
-    width: 100%;
-    padding: 0;
-  }
+.footer table td {
+  padding-right: 32px;
 }
