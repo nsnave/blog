@@ -1,69 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Blog</title>
     <link rel="stylesheet" type="text/css" href="css/main.css" />
-  <head>
+  </head>
   <body>
     <div class="header">
-      <table>
-        <tr>
-          <td>
-            <h1>Ramblings</h1>
-          </td>
-          <td><div style="width: 0px"></div></td>
-          <td>
-            <br>
-            <i>A Blog By <a href="https://www.aidantevans.com">Aidan Evans</a></i>
-          </td>
-        </tr>
-      </table>
+      <div class="main">
+        <table>
+          <tr>
+            <td>
+              <a href="./" class="title"><h1>Ramblings</h1></a>
+            </td>
+            <td><div style="width: 0px"></div></td>
+            <td>
+              <br />
+              <i
+                >A Blog By
+                <a href="https://www.aidantevans.com">Aidan Evans</a></i
+              >
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="bar">
+        <span class="title-span">
+          <a class="sp-link" style="text-align: center">
+            <b>Recent Posts</b>
+          </a>
+        </span>
+        <span class="title-span">
+          <a class="sp-link" style="text-align: center">
+            <b>Selected Posts</b>
+          </a>
+        </span>
+        <span class="title-span">
+          <a class="sp-link" style="text-align: center">
+            <b>All Posts</b>
+          </a>
+        </span>
+      </div>
     </div>
-    
+
     <div class="row">
       <div class="leftcolumn">
+        <!-- \expanded{recent} -->
         <div class="card">
-          <h2>TITLE HEADING</h2>
-          <h5>Title description, Dec 7, 2017</h5>
-          <div class="fakeimg" style="height:200px;">Image</div>
+          <h2>Post Title</h2>
+          <span style="color: dimgray"
+            ><h4><i>Date</i></h4></span
+          >
+          <div class="post-image">
+            <img src="media/p-np-folders.webp" alt="P versus NP meme" />
+          </div>
+          <p>Some text..</p>
+          <div class="sp-div">
+            <a class="sp-link" style="text-align: center">
+              <b>Read More</b>
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Post Title</h2>
+          <span style="color: dimgray"
+            ><h4><i>Date</i></h4></span
+          >
+          <div class="post-image">
+            <img src="media/ip.png" alt="P versus NP meme" />
+          </div>
+          <p>
+            Some text. ;laksjd fask dfjlsdkf lsdk fjlasdk fjlaskdj flaksd
+            fjlasdkf jlasdkf jlasdkf jlasdkjf aslkdfj asldkf jlaskd fjlaskdf
+            jlasdk flasdk fjlasdk fjlasdk fjlaskdfj lasdk fj.
+          </p>
+          <div class="sp-div">
+            <a class="sp-link" style="text-align: center">
+              <b>Read More</b>
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Post Title</h2>
+          <span style="color: dimgray"
+            ><h4><i>Date</i></h4></span
+          >
           <p>Some text..</p>
         </div>
+
         <div class="card">
-          <h2>TITLE HEADING</h2>
-          <h5>Title description, Sep 2, 2017</h5>
-          <div class="fakeimg" style="height:200px;">Image</div>
+          <h2>Post Title</h2>
+          <span style="color: dimgray"
+            ><h4><i>Date</i></h4></span
+          >
+          <div class="post-image">
+            <img src="media/owf-p-np.jpg" alt="OWF meme" />
+          </div>
           <p>Some text..</p>
         </div>
       </div>
-
 
       <div class="rightcolumn">
         <div class="card">
           <h2>About Me</h2>
-          <div class="fakeimg" style="height:100px;">Image</div>
-          <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+          <div class="post-image">
+            <img src="media/me1.jpg" style="max-height: 200px" alt="Me" />
+          </div>
+          <p>Me</p>
         </div>
 
         <div class="card">
-          <h3>Popular Post</h3>
-          <div class="fakeimg">Image</div><br>
-          <div class="fakeimg">Image</div><br>
-          <div class="fakeimg">Image</div>
+          <h2>Selected Posts</h2>
+          <!-- \compact{top selected} -->
+          <div class="sp-div">
+            <a class="sp-link">
+              Post Title <span style="color: dimgray">(<i>Date</i>)</span>
+            </a>
+          </div>
+          <br />
+          <div class="sp-div">
+            <a class="sp-link" style="text-align: center">
+              <b>See More</b>
+            </a>
+          </div>
+          <br />
         </div>
 
+        <!--
         <div class="card">
           <h3>Follow Me</h3>
           <p>Some text..</p>
         </div>
-        
+        -->
       </div>
     </div>
-    
+
     <div class="footer">
       <h2>Footer</h2>
     </div>
   </body>
 </html>
-
-
