@@ -1,3 +1,24 @@
+@font-face {
+  font-family: cm-serif;
+  src: url("/fonts/cmunrm.ttf");
+}
+@font-face {
+  font-family: cm-serif;
+  font-weight: bold;
+  src: url("/fonts/cmunbx.ttf");
+}
+@font-face {
+  font-family: cm-serif;
+  font-style: italic;
+  src: url("/fonts/cmunti.ttf");
+}
+@font-face {
+  font-family: cm-serif;
+  font-style: italic;
+  font-weight: bold;
+  src: url("/fonts/cmunbi.ttf");
+}
+
 body {
   /* font-family: "Times New Roman", Times, serif; */
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
@@ -6,7 +27,7 @@ body {
 }
 
 body p {
-  font-family: "Times New Roman", Times, serif;
+  font-family: cm-serif, "Times New Roman", Times, serif;
 }
 
 /* Header/Blog Title */
