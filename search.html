@@ -6,9 +6,15 @@
       name="description"
       content="My name's Aidan. I'm an undergrad at Yale studying computer science and philosophy. I love thinking about computers, philosophy, logic, math, and really anything remotely related to these. Thus, this blog is meant to be a place where I can write down and share my ramblings on these things and more."
     />
-    <title>Blog</title>
+    <title>Search Posts</title>
     <link rel="stylesheet" type="text/css" href="./css/main.css" />
     <link rel="stylesheet" type="text/css" href="./css/search-columns.css" />
+    <style>
+      .post-image img {
+        max-height: 0px;
+        max-width: 0px;
+      }
+    </style>
   </head>
   <body>
     <div class="header">
@@ -43,7 +49,7 @@
 
   <div class="bar">
     <span class="title-span">
-      <a href="./" class="sp-link" style="text-align: center; background-color: #aaa">
+      <a href="./" class="sp-link" style="text-align: center; ">
         <b>Recent Posts</b>
       </a>
     </span>
@@ -55,6 +61,11 @@
     <span class="title-span">
       <a href="./all.html" class="sp-link" style="text-align: center; ">
         <b>All Posts</b>
+      </a>
+    </span>
+    <span class="title-span">
+      <a href="./search.html" class="sp-link" style="text-align: center; background-color: #aaa">
+        <b>Search Posts</b>
       </a>
     </span>
   </div>
@@ -132,6 +143,7 @@
           </form>
           <br />
 
+          <!--
           <div class="sp-div">
             <a
               id="searchbtn"
@@ -142,7 +154,9 @@
               <b>Search</b>
             </a>
           </div>
+          -->
         </div>
+        <!--
         <script>
           document
             .getElementById("searchbox")
@@ -153,24 +167,10 @@
               }
             });
         </script>
+        -->
       </div>
 
-      <div class="rightcolumn"><div class="card">
-  <h2>My First Post</h2>
-  <span style="color: dimgray"
-    ><h4><i>June 09, 2022</i></h4></span
-  >
-  <div class="post-image">
-<img src="./media/memes/p-np-folders.webp" alt="p-np-folders.webp" />
-</div>
-  <p>This is my first post! I will be posting more stuff about whatever I feel like -- i.e, mostly stuff relating to computer science, mathematics, and logic. To get started with a light post, here's a handful of TCS/math/logic memes.</p>
-  <div class="sp-div">
-    <a href="./posts/my+first+post.html" class="sp-link" style="text-align: center">
-      <b>Read More</b>
-    </a>
-  </div>
-</div>
-</div>
+      <div class="rightcolumn" id="results"></div>
     </div>
     <script src="./search.js"></script>
 
