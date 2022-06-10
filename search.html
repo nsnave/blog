@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="My name's Aidan. I'm an undergrad at Yale studying computer science and philosophy. I love thinking about computers, philosophy, logic, math, and really anything remotely related to these. Thus, this blog is meant to be a place where I can write down and share my ramblings on these things and more."
+    />
+    <title>Blog</title>
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" href="./css/search-columns.css" />
+  </head>
+  <body>
+    <div class="header">
+  <div class="main">
+    <div style="display: flex; width: 50%">
+      <table>
+        <tr>
+          <td>
+            <a href="./" class="title"><h1>Ramblings</h1></a>
+          </td>
+          <td><div style="width: 0px"></div></td>
+          <td>
+            <br />
+            <i
+              >A Blog By
+              <a href="https://www.aidantevans.com">Aidan Evans</a></i
+            >
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div style="display: flex; width: 50%; justify-content: right">
+      <table style="height: 100%">
+        <tr>
+          <td>
+            <img style="height: 60px" src="./media/sleep-logo.png" />
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="bar">
+    <span class="title-span">
+      <a href="./" class="sp-link" style="text-align: center; background-color: #aaa">
+        <b>Recent Posts</b>
+      </a>
+    </span>
+    <span class="title-span">
+      <a href="./selected.html" class="sp-link" style="text-align: center; ">
+        <b>Selected Posts</b>
+      </a>
+    </span>
+    <span class="title-span">
+      <a href="./all.html" class="sp-link" style="text-align: center; ">
+        <b>All Posts</b>
+      </a>
+    </span>
+  </div>
+</div>
+
+
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <input
+            type="text"
+            id="searchbox"
+            name="searchbox"
+            placeholder="Keywords"
+          />
+
+          <h4>Filters:</h4>
+          <form>
+            <input
+              type="radio"
+              checked
+              id="show"
+              name="filter-type"
+              value="show"
+            />
+            <label for="show">Show</label>
+
+            <input type="radio" id="hide" name="filter-type" value="hide" />
+            <label for="hide">Hide</label><br /><br />
+
+            <input
+              type="checkbox"
+              checked
+              id="sub-cs"
+              name="sub-cs"
+              value="cs"
+            />
+            <label for="sub-cs"> CS</label><br />
+
+            <input
+              type="checkbox"
+              checked
+              id="sub-math"
+              name="sub-math"
+              value="math"
+            />
+            <label for="sub-math"> Math</label><br />
+
+            <input
+              type="checkbox"
+              checked
+              id="sub-logic"
+              name="sub-logic"
+              value="logic"
+            />
+            <label for="sub-logic"> Logic</label><br />
+
+            <input
+              type="checkbox"
+              checked
+              id="sub-phil"
+              name="sub-phil"
+              value="phil"
+            />
+            <label for="sub-phil"> Philosophy</label><br />
+
+            <input
+              type="checkbox"
+              checked
+              id="sub-misc"
+              name="sub-misc"
+              value="misc"
+            />
+            <label for="sub-misc"> Misc.</label><br />
+          </form>
+          <br />
+
+          <div class="sp-div">
+            <a
+              id="searchbtn"
+              href="#"
+              class="sp-link"
+              style="text-align: center"
+            >
+              <b>Search</b>
+            </a>
+          </div>
+        </div>
+        <script>
+          document
+            .getElementById("searchbox")
+            .addEventListener("keyup", function (event) {
+              event.preventDefault();
+              if (event.keyCode === 13) {
+                document.getElementById("searchbtn").click();
+              }
+            });
+        </script>
+      </div>
+
+      <div class="rightcolumn"><div class="card">
+  <h2>My First Post</h2>
+  <span style="color: dimgray"
+    ><h4><i>June 09, 2022</i></h4></span
+  >
+  <div class="post-image">
+<img src="./media/memes/p-np-folders.webp" alt="p-np-folders.webp" />
+</div>
+  <p>This is my first post! I will be posting more stuff about whatever I feel like -- i.e, mostly stuff relating to computer science, mathematics, and logic. To get started with a light post, here's a handful of TCS/math/logic memes.</p>
+  <div class="sp-div">
+    <a href="./posts/my+first+post.html" class="sp-link" style="text-align: center">
+      <b>Read More</b>
+    </a>
+  </div>
+</div>
+</div>
+    </div>
+    <script src="./search.js"></script>
+
+    <div class="footer">
+  <table>
+    <tr>
+      <td><a href="./">Blog Home</a></td>
+      <td><a href="./recent.html">Recent Posts</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.aidantevans.com">About Me</a></td>
+      <td><a href="./selected.html">Selected Posts</a></td>
+    </tr>
+    <tr>
+      <td><a href="./newsletter.html">Newsletter</a></td>
+      <td><a href="./all.html">All Posts</a></td>
+    </tr>
+  </table>
+</div>
+
+  </body>
+</html>
