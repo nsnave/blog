@@ -96,6 +96,9 @@ body {
   background: #ddd;
   margin-top: 20px;
 }
+.footer .main {
+  display: flex;
+}
 
 .footer table td {
   padding-right: 32px;
