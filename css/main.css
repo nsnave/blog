@@ -101,7 +101,7 @@ body {
   padding-right: 32px;
 }
 
-#searchbox {
+.searchbox {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
