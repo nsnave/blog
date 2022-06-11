@@ -46,8 +46,24 @@ body p {
 
 .header .bar {
   justify-content: center;
-  background-color: #ddd;
+  background-color: white;
   display: flex;
+}
+
+.header .bar a {
+  background-color: white;
+}
+
+.header .bar a:hover {
+  background-color: #ddd;
+}
+
+hr {
+  width: 80%;
+  height: 2px;
+  border-width: 0;
+  color: lightgray;
+  background-color: lightgray;
 }
 
 .title {
