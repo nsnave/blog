@@ -44,6 +44,10 @@ body p {
   display: flex;
 }
 
+.header .main a {
+  color: black;
+}
+
 .header .bar {
   justify-content: center;
   background-color: white;
@@ -52,6 +56,8 @@ body p {
 
 .header .bar a {
   background-color: white;
+  text-align: center;
+  height: 100%;
 }
 
 .header .bar a:hover {
