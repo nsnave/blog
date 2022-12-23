@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Ramblings | A Blog By Aidan Evans</title>
+    <link>https://blog.aidantevans.com/</link>
+    <description>Ramblings on computer science, math, logic, philosophy and whatever else comes to mind.</description>
+    
+    <item>
+      <title>My First Post</title>
+      <link>https://blog.aidantevans.com/posts/my+first+post.html</link>
+      <guid>https://blog.aidantevans.com/posts/my+first+post.html</guid>
+      <pubDate>Thu, 09 Jun 2022 00:00:00 GMT</pubDate>
+      <description>This is my first post! I will be posting more stuff about whatever I feel like -- i.e, mostly stuff relating to computer science, mathematics, and logic. To get started with a light post, here's a handful of TCS/math/logic memes.</description>
+    </item>
+
+  </channel>
+</rss>
