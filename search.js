@@ -35,7 +35,7 @@ function filterPosts(show, tags_enc, cards = false) {
     }
   }
 
-  return filtered;
+  return filtered.reverse();
 }
 
 function search() {

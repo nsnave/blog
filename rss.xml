@@ -9,7 +9,7 @@
       <title>My First Post</title>
       <link>https://blog.aidantevans.com/posts/my-first-post.html</link>
       <guid>https://blog.aidantevans.com/posts/my-first-post.html</guid>
-      <pubDate>Thu, 09 Jun 2022 00:00:00 GMT</pubDate>
+      <pubDate>Thu, 09 Jun 2022</pubDate>
       <description>This is my first post! I will be posting more stuff about whatever I feel like -- i.e, mostly stuff relating to computer science, mathematics, and logic. To get started with a light post, here's a handful of TCS/math/logic memes.</description>
       
       <image>
@@ -22,7 +22,7 @@
       <title>Logical Duality and "Et Cetera"</title>
       <link>https://blog.aidantevans.com/posts/logical-duality-and-et-cetera.html</link>
       <guid>https://blog.aidantevans.com/posts/logical-duality-and-et-cetera.html</guid>
-      <pubDate>Fri, 23 Dec 2022 00:00:00 GMT</pubDate>
+      <pubDate>Fri, 23 Dec 2022</pubDate>
       <description>In the study of logic, many operators have a <i>dual</i>: AND gates have OR gates, universal quantifiers have existential quantifiers, and so on. We commonly use the term "etc." to abbreviate the Latin phrase "et cetera", which in English roughly translates to "and the like". We don't, however, have an abbreviation for "or the like" --- the dual to "etc.". Should we?</description>
       
       <image>
