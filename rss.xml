@@ -7,15 +7,28 @@
     
     <item>
       <title>My First Post</title>
-      <link>https://blog.aidantevans.com/posts/my+first+post.html</link>
-      <guid>https://blog.aidantevans.com/posts/my+first+post.html</guid>
+      <link>https://blog.aidantevans.com/posts/my-first-post.html</link>
+      <guid>https://blog.aidantevans.com/posts/my-first-post.html</guid>
       <pubDate>Thu, 09 Jun 2022 00:00:00 GMT</pubDate>
       <description>This is my first post! I will be posting more stuff about whatever I feel like -- i.e, mostly stuff relating to computer science, mathematics, and logic. To get started with a light post, here's a handful of TCS/math/logic memes.</description>
       
       <image>
         <url>https://blog.aidantevans.com/media/memes/p-np-folders.png</url>
         <title>My First Post</title>
-        <link>https://blog.aidantevans.com/posts/my+first+post.html</link>
+        <link>https://blog.aidantevans.com/posts/my-first-post.html</link>
+      </image>
+    </item>
+    <item>
+      <title>Logical Duality and "Et Cetera"</title>
+      <link>https://blog.aidantevans.com/posts/logical-duality-and-et-cetera.html</link>
+      <guid>https://blog.aidantevans.com/posts/logical-duality-and-et-cetera.html</guid>
+      <pubDate>Fri, 23 Dec 2022 00:00:00 GMT</pubDate>
+      <description>In the study of logic, many operators have a <i>dual</i>: AND gates have OR gates, universal quantifiers have existential quantifiers, and so on. We commonly use the term "etc." to abbreviate the Latin phrase "et cetera", which in English roughly translates to "and the like". We don't, however, have an abbreviation for "or the like" --- the dual to "etc.". Should we?</description>
+      
+      <image>
+        <url>https://blog.aidantevans.com/</url>
+        <title>Logical Duality and "Et Cetera"</title>
+        <link>https://blog.aidantevans.com/posts/logical-duality-and-et-cetera.html</link>
       </image>
     </item>
 
