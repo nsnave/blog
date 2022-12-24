@@ -6,19 +6,6 @@
     <description>Ramblings on computer science, math, logic, philosophy, and whatever else comes to mind.</description>
     
     <item>
-      <title>My First Post</title>
-      <link>https://blog.aidantevans.com/posts/my-first-post.html</link>
-      <guid>https://blog.aidantevans.com/posts/my-first-post.html</guid>
-      <pubDate>Thu, 09 Jun 2022</pubDate>
-      <description>This is my first post! I will be posting more stuff about whatever I feel like -- i.e, mostly stuff relating to computer science, mathematics, and logic. To get started with a light post, here's a handful of TCS/math/logic memes.</description>
-      
-      <image>
-        <url>https://blog.aidantevans.com/media/memes/p-np-folders.png</url>
-        <title>My First Post</title>
-        <link>https://blog.aidantevans.com/posts/my-first-post.html</link>
-      </image>
-    </item>
-    <item>
       <title>Logical Duality and "Et Cetera"</title>
       <link>https://blog.aidantevans.com/posts/logical-duality-and-et-cetera.html</link>
       <guid>https://blog.aidantevans.com/posts/logical-duality-and-et-cetera.html</guid>
@@ -29,6 +16,19 @@
         <url>https://blog.aidantevans.com/</url>
         <title>Logical Duality and "Et Cetera"</title>
         <link>https://blog.aidantevans.com/posts/logical-duality-and-et-cetera.html</link>
+      </image>
+    </item>
+    <item>
+      <title>My First Post</title>
+      <link>https://blog.aidantevans.com/posts/my-first-post.html</link>
+      <guid>https://blog.aidantevans.com/posts/my-first-post.html</guid>
+      <pubDate>Thu, 09 Jun 2022</pubDate>
+      <description>This is my first post! I will be posting more stuff about whatever I feel like -- i.e, mostly stuff relating to computer science, mathematics, and logic. To get started with a light post, here's a handful of TCS/math/logic memes.</description>
+      
+      <image>
+        <url>https://blog.aidantevans.com/media/memes/p-np-folders.png</url>
+        <title>My First Post</title>
+        <link>https://blog.aidantevans.com/posts/my-first-post.html</link>
       </image>
     </item>
 
