@@ -152,3 +152,9 @@ hr {
 .footer table td {
   padding-right: 32px;
 }
+
+@media screen and (max-width: 580px) {
+  .footer #sleep-logo {
+    display: none;
+  }
+}
