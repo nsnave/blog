@@ -6,10 +6,23 @@
     <description>Ramblings on computer science, math, logic, philosophy, and whatever else comes to mind.</description>
     
     <item>
+      <title>I made my own bookplate (using AI)</title>
+      <link>https://blog.aidantevans.com/posts/i-made-my-own-bookplate-using-ai.html</link>
+      <guid>https://blog.aidantevans.com/posts/i-made-my-own-bookplate-using-ai.html</guid>
+      <pubDate>Wed, 28 Dec 2022 01:04:00 EST</pubDate>
+      <description>Bookplates are like stamps put on the inside covers of books in order to identify the owner. They started primarily in monasteries in the 15th and 16th centuries and were quite popular amongst personal libraries until the 1950s. They were used to personalize an individual's book collection and to encourage borrowers to return the book to its owner. With my collection of books growing, I decided to make my own bookplate. To do so, I used a combination of AI (specifically DALL-E) and hand editting. In this post, I explain what bookplates are and how I made my own using AI.</description>
+      
+      <image>
+        <url>https://blog.aidantevans.com/media/bookplates/my-bookplate.png</url>
+        <title>I made my own bookplate (using AI)</title>
+        <link>https://blog.aidantevans.com/posts/i-made-my-own-bookplate-using-ai.html</link>
+      </image>
+    </item>
+    <item>
       <title>Logical Duality and "Et Cetera"</title>
       <link>https://blog.aidantevans.com/posts/logical-duality-and-et-cetera.html</link>
       <guid>https://blog.aidantevans.com/posts/logical-duality-and-et-cetera.html</guid>
-      <pubDate>Fri, 23 Dec 2022</pubDate>
+      <pubDate>Fri, 23 Dec 2022 23:00:00 EST</pubDate>
       <description>In the study of logic, many operators have a <i>dual</i>: AND gates have OR gates, universal quantifiers have existential quantifiers, and so on. We commonly use the term "etc." to abbreviate the Latin phrase "et cetera", which in English roughly translates to "and the like". We don't, however, have an abbreviation for "or the like" --- the dual to "etc.". Should we?</description>
       
       <image>
@@ -22,7 +35,7 @@
       <title>My First Post</title>
       <link>https://blog.aidantevans.com/posts/my-first-post.html</link>
       <guid>https://blog.aidantevans.com/posts/my-first-post.html</guid>
-      <pubDate>Thu, 09 Jun 2022</pubDate>
+      <pubDate>Thu, 09 Jun 2022 00:00:00 GMT</pubDate>
       <description>This is my first post! I will be posting more stuff about whatever I feel like -- i.e, mostly stuff relating to computer science, mathematics, and logic. To get started with a light post, here's a handful of TCS/math/logic memes.</description>
       
       <image>
