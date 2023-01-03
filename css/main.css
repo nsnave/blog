@@ -30,6 +30,14 @@ body p {
   font-family: cm-serif, "Times New Roman", Times, serif;
 }
 
+body p ul {
+  font-family: cm-serif, "Times New Roman", Times, serif;
+}
+
+body p li {
+  font-family: cm-serif, "Times New Roman", Times, serif;
+}
+
 /* Header/Blog Title */
 .header {
   text-align: center;
