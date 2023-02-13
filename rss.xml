@@ -6,6 +6,14 @@
     <description>Ramblings on computer science, math, logic, philosophy, and whatever else comes to mind.</description>
     
     <item>
+      <title>The Power of a Pushdown Tape</title>
+      <link>https://blog.aidantevans.com/posts/the-power-of-a-pushdown-tape.html</link>
+      <guid>https://blog.aidantevans.com/posts/the-power-of-a-pushdown-tape.html</guid>
+      <pubDate>Mon, 13 Feb 2023 01:40:50 EST</pubDate>
+      <description>When most computer scientists hear "Cook's 1971 paper", they think about NP-completeness and of his paper proving the Cook half of the Cook-Levin theorem. That same year, however, he also published a paper on the relationship between time and space on a Turing machine when a pushdown tape is introduced. Like how adding a pushdown tape to finite automata increases the power of the machine from recognizing regular languages to context-free languages, adding a pushdown tape to a Turing machine also changes things up.</description>
+      
+    </item>
+    <item>
       <title>RSS Feeds and Why They're Great</title>
       <link>https://blog.aidantevans.com/posts/rss-feeds-and-why-theyre-great.html</link>
       <guid>https://blog.aidantevans.com/posts/rss-feeds-and-why-theyre-great.html</guid>

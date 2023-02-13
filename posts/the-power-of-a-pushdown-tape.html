@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="When most computer scientists hear "Cook's 1971 paper", they think about NP-completeness and of his paper proving the Cook half of the Cook-Levin theorem. That same year, however, he also published a paper on the relationship between time and space on a Turing machine when a pushdown tape is introduced. Like how adding a pushdown tape to finite automata increases the power of the machine from recognizing regular languages to context-free languages, adding a pushdown tape to a Turing machine also changes things up." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Post 5: The Power of a Pushdown Tape</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../css/post-columns.css" />
+    <!-- Google tag (gtag.js) -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-E0MC4XFWK3"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-E0MC4XFWK3");
+</script>
+
+<!-- Katex -->
+<link rel="stylesheet" href="/katex.min.css" />
+<script defer src="/katex.min.js"></script>
+<script
+  defer
+  src="/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body);"
+></script>
+
+<!-- RSS -->
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  title="RSS Feed"
+  href="/rss.xml"
+/>
+
+  </head>
+  <body>
+    <div class="header">
+  <div class="main">
+    <div style="display: flex; width: 100%">
+      <table>
+        <tr>
+          <td>
+            <a href="../" class="title"><h1>Ramblings</h1></a>
+          </td>
+          <td><div style="width: 0px"></div></td>
+          <td>
+            <br />
+            <i
+              >A Blog By
+              <a href="https://www.aidantevans.com">Aidan Evans</a></i
+            >
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!--
+    <div style="display: flex; width: 50%; justify-content: right">
+      <table style="height: 100%">
+        <tr>
+          <td>
+            <img style="height: 60px" src="../media/sleep-logo.png" />
+          </td>
+        </tr>
+      </table>
+    </div>
+    -->
+  </div>
+
+  <div class="bar">
+    <span class="title-span">
+      <a href="../" class="sp-link" style="">
+        <b>Recent Posts</b>
+      </a>
+    </span>
+    <span class="title-span">
+      <a href="../selected.html" class="sp-link" style="">
+        <b>Selected Posts</b>
+      </a>
+    </span>
+    <span class="title-span">
+      <a href="../all.html" class="sp-link" style="">
+        <b>All Posts</b>
+      </a>
+    </span>
+    <span class="title-span">
+      <a href="../search.html" class="sp-link" style="">
+        <b>Search Posts</b>
+      </a>
+    </span>
+  </div>
+</div>
+
+
+    <div class="row">
+      <div class="sidecolumn">&nbsp;</div>
+
+      <div class="centercolumn">
+        <div class="card">
+          <h2>The Power of a Pushdown Tape</h2>
+          <span style="color: dimgray"
+            ><h4>Post 5 | <i>February 13, 2023</i></h4></span
+          >
+          
+          <p>When most computer scientists hear "Cook's 1971 paper", they think about NP-completeness and of his paper proving the Cook half of the Cook-Levin theorem. That same year, however, he also published a paper on the relationship between time and space on a Turing machine when a pushdown tape is introduced. Like how adding a pushdown tape to finite automata increases the power of the machine from recognizing regular languages to context-free languages, adding a pushdown tape to a Turing machine also changes things up.</p>
+          <hr />
+          
+<h3>Introduction</h3>
+
+<p>
+  Take a Turing machine with an input tape and a work tape. Now say we also give the machine a pushdown tape like <a href="https://en.wikipedia.org/wiki/Pushdown_automaton">PDAs</a> have. <a href="#cook1971">Cook's 1971 paper</a> calls this machine an <i>Auxiliary Pushdown Machine (PDM)</i> and until I stumbled upon the original paper, I had not seen this machine before. In fact, to my knowledge, the <b>only</b> textbook or teaching/reference material to ever include the results of this work is the 1979 edition of <a href="https://en.wikipedia.org/wiki/Introduction_to_Automata_Theory,_Languages,_and_Computation">Hopcroft and Ullman</a> --- just the 1979 edition. Not the earlier 1969 precurser or any of the later editions include it. Now, while a Turing machine with a pushdown tape doesn't sound very interesting at first, there turns out to be some very interesting properties of PDMs and this is what Cook shows. In this post, I will focus on two main results of the paper.
+</p>
+
+<h3>PDM Space versus TM Time</h3>
+
+<p>
+  Say we bound the work tape of a PDM to use only \(S(n)\) space but we leave the pushdown tape unbounded. Define the class of problems decidable when restricted to only \(S(n)\)-space on the worktape as \(
+    PDM\text{-}SPACE(S(n))
+  \). We will denote the class of problems for time-bounded deterministic Turing machines using the standard notation of \(DTIME(\cdot)\). Here's the interesting part: Cook proved the following relationship between space-bounded computation on a PDM and time-bounded computation on a Turing machine:\[
+    PDM\text{-}SPACE(S(n)) \subseteq DTIME(2^{O(S(n))})
+  \] It follows that \[
+    PDM\text{-}SPACE(\log(n)) = DTIME(2^{O(\log(n))}) = DTIME(n^{O(1)}) = P
+  \]
+</p>
+  
+<p>
+  We, therefore, have that log-space computation on a PDM is equivalent to polynomial-time computation on a Turing machine. That's the first cool part about PDMs. There's another. 
+
+</p>
+
+
+<h3>Deterministic versus Non-Deterministic PDMs</h3>
+
+<p>
+  Let \(PDM\text{-}NSPACE(\cdot)\) be the non-deterministic counterpart to \(PDM\text{-}SPACE(\cdot)\). Cook also proved that \[
+    PDM\text{-}NSPACE(S(n)) = PDM\text{-}SPACE(S(n))
+  \] Therefore, all together we have, \[
+    PDM\text{-}SPACE(S(n)) = PDM\text{-}NSPACE(S(n)) = DTIME(2^{O(S(n))})
+  \]
+</p>
+
+<p>
+  Thus, we can rephrase the L vs P (NL vs P) problem as follows: "Does adding a pushdown tape to a log-space bounded (non-deterministic) Turing machine increase the computational power? I.e., can we solve more problems?". A very interesting reformulation if you ask me!
+</p>
+
+-- Aidan
+
+
+          <br />
+          <p><table style="font-family: cm-serif, 'Times New Roman', Times, serif">
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="cook1971">1</a>]
+</td>
+<td class="bibtexitem">
+Stephen&nbsp;A Cook.
+ Characterizations of pushdown machines in terms of time-bounded
+  computers.
+ <em>Journal of the ACM (JACM)</em>, 18(1):4--18, 1971.
+
+</td>
+</tr>
+</table></p><br>
+          <script
+  src="https://giscus.app/client.js"
+  data-repo="nsnave/blog"
+  data-repo-id="R_kgDOHeIVuw"
+  data-category="Announcements"
+  data-category-id="DIC_kwDOHeIVu84CPkBc"
+  data-mapping="title"
+  data-reactions-enabled="0"
+  data-emit-metadata="0"
+  data-input-position="bottom"
+  data-theme="light"
+  data-lang="en"
+  data-loading="lazy"
+  crossorigin="anonymous"
+  async
+></script>
+
+        </div>
+      </div>
+
+      <div class="sidecolumn">&nbsp;</div>
+    </div>
+
+    <div class="footer">
+  <div class="main">
+    <div style="display: flex; width: 50%">
+      <table>
+        <tr>
+          <td><a href="../">Blog Home</a></td>
+          <td><a href="../">Recent Posts</a></td>
+          <td><a href="../search.html">Search Posts</a></td>
+        </tr>
+        <tr>
+          <td><a href="https://www.aidantevans.com">About Me</a></td>
+          <td><a href="../selected.html">Selected Posts</a></td>
+        </tr>
+        <tr>
+          <td><a href="../rss.xml">RSS Feed</a></td>
+          <td><a href="../all.html">All Posts</a></td>
+        </tr>
+      </table>
+    </div>
+    <div style="display: flex; width: 50%; justify-content: right">
+      <table style="height: 100%">
+        <tr>
+          <td>
+            <img
+              id="sleep-logo"
+              style="height: 60px"
+              src="../media/sleep-logo.png"
+            />
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>
