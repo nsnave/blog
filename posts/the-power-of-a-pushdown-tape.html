@@ -124,7 +124,7 @@
   Say we bound the work tape of a PDM to use only \(S(n)\) space but we leave the pushdown tape unbounded. Define the class of problems decidable when restricted to only \(S(n)\)-space on the worktape as \(
     PDM\text{-}SPACE(S(n))
   \). We will denote the class of problems for time-bounded deterministic Turing machines using the standard notation of \(DTIME(\cdot)\). Here's the interesting part: Cook proved the following relationship between space-bounded computation on a PDM and time-bounded computation on a Turing machine:\[
-    PDM\text{-}SPACE(S(n)) \subseteq DTIME(2^{O(S(n))})
+    PDM\text{-}SPACE(S(n)) = DTIME(2^{O(S(n))})
   \] It follows that \[
     PDM\text{-}SPACE(\log(n)) = DTIME(2^{O(\log(n))}) = DTIME(n^{O(1)}) = P
   \]
@@ -150,7 +150,9 @@
   Thus, we can rephrase the L vs P (NL vs P) problem as follows: "Does adding a pushdown tape to a log-space bounded (non-deterministic) Turing machine increase the computational power? I.e., can we solve more problems?". A very interesting reformulation if you ask me!
 </p>
 
--- Aidan
+<p>
+  -- Aidan
+</p>
 
 
           <br />
