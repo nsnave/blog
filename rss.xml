@@ -6,6 +6,19 @@
     <description>Ramblings on computer science, math, logic, philosophy, and whatever else comes to mind.</description>
     
     <item>
+      <title>My First Publication!</title>
+      <link>https://blog.aidantevans.com/posts/my-first-publication.html</link>
+      <guid>https://blog.aidantevans.com/posts/my-first-publication.html</guid>
+      <pubDate>Sun, 26 Feb 2023 01:41:55 EST</pubDate>
+      <description>I'm proud to annouce that I have gotten my first peer-reviewed publication! It is to be included in ACM's ICSE conference proceedings.</description>
+      
+      <image>
+        <url>https://blog.aidantevans.com/media/title/icse2023.png</url>
+        <title>My First Publication!</title>
+        <link>https://blog.aidantevans.com/posts/my-first-publication.html</link>
+      </image>
+    </item>
+    <item>
       <title>The Power of a Pushdown Tape</title>
       <link>https://blog.aidantevans.com/posts/the-power-of-a-pushdown-tape.html</link>
       <guid>https://blog.aidantevans.com/posts/the-power-of-a-pushdown-tape.html</guid>
